@@ -6,8 +6,17 @@
 <style>
 
 .linkdestacacursos{
-	background-color:#F00;
-	
+	/*background-color:#F00;*/
+	color: #F00;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+.linkdestaInformacion{
+	/*background-color:#F00;*/
+	color: #;
+	font-weight: bold;
+	margin-left: 25px;
 }
 
 a{
@@ -52,6 +61,9 @@ td{
 
 			$(".cursos").addClass("linkdestacacursos");
 
+			//$(".cursos").toggleClass("linkdestacacursos");
+
+
 		}
 
 
@@ -59,6 +71,8 @@ td{
 			$(".cursos").removeClass("linkdestacacursos");
 
 			$(".ejemplos").addClass("linkdestacacursos");
+			//$(".ejemplos").toggleClass("linkdestacacursos");
+
 		}
 
 </script>
@@ -96,8 +110,15 @@ Calculadora
 
 <table width="100%" border="1">
 <tr>
-<td>Cursos destacados&nbsp;&nbsp;<input type="button"  value="Cursos" id="cursos"></td>
-<td>Información adicional&nbsp;&nbsp;<input type="button"  value="Información" id="informacion"></td>
+<!--<td>Cursos destacados&nbsp;&nbsp;<input type="button"  value="Cursos" id="cursos"></td>-->
+<!--<td>Cursos destacados&nbsp;&nbsp;<input type="checkbox"  value="Cursos" id="cursos"></td>-->
+<td>Cursos destacados&nbsp;&nbsp;<input type="radio" name="misbotones" value="Cursos" id="cursos"></td>
+
+
+<!--<td>Información adicional&nbsp;&nbsp;<input type="button"  value="Información" id="informacion"></td>-->
+<!--<td>Información adicional&nbsp;&nbsp;<input type="checkbox"  value="Información" id="informacion"></td>-->
+<td>Información adicional&nbsp;&nbsp;<input type="radio" name="misbotones" value="Información" id="informacion"></td>
+
 </tr>
 
 
